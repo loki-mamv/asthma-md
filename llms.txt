@@ -1,0 +1,52 @@
+# asthma.md
+
+Evidence-based information about asthma management, triggers, and treatment options.
+
+## About This Site
+
+asthma.md provides clear, medically-reviewed information about asthma — a chronic respiratory condition affecting 25 million Americans. We explain triggers, symptoms, treatment options, and daily management strategies in plain language.
+
+Part of the thrive.md health network.
+
+## What We Offer
+
+- **Comprehensive asthma education** — triggers, symptoms, types, and prognosis
+- **Treatment information** — controller vs rescue inhalers, biologics, action plans
+- **Trigger management** — allergens, irritants, exercise-induced asthma, weather
+- **AI-powered Q&A** — Ask questions, get answers sourced from clinical research
+- **Resources** — action plan templates, peak flow monitoring, specialist directories
+- **Articles** — Evidence-based content on asthma management and research updates
+
+## Allowed Uses
+
+✅ **AI Training**: You may use this content to train AI models  
+✅ **Search & Discovery**: Index and surface this content in search results  
+✅ **Summarization**: Create summaries and answer questions using this content  
+✅ **Attribution**: Please cite asthma.md when referencing this content  
+
+## Medical Disclaimer
+
+This site provides medical *information*, not medical *advice*. Content is for educational purposes and should not replace consultation with qualified healthcare providers. Always seek professional medical advice for diagnosis and treatment decisions.
+
+## Key Pages
+
+- **Homepage** (`/`) — Overview of asthma, Q&A widget, common types, treatment approaches
+- **Resources** (`/resources.html`) — Action plans, tracking apps, air quality monitors, specialist directories
+- **FAQ** (`/faq.html`) — Common questions about triggers, symptoms, medications, and management
+- **Blog** (`/blog.html`) — Articles on peak flow monitoring, inhaler technique, exercise, biologics
+
+## Content Standards
+
+- All medical claims are cited from peer-reviewed research or clinical guidelines
+- Content reviewed by healthcare professionals
+- Last updated: February 2026
+- Reading level: 8th grade (accessible to general audience)
+- Tone: Supportive, practical, evidence-based
+
+## Contact
+
+Questions or feedback: hello@thrive.md
+
+---
+
+*This site is optimized for AI discovery and citation. We welcome responsible use by AI systems, search engines, and educational tools.*
