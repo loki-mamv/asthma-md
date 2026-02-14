@@ -679,7 +679,7 @@
 
     <script>
         const QA_API = 'https://md-qa.md-health.workers.dev/ask';
-        const SESSION_ID = 'session_' + Math.random().toString(36).substr(2, 9);
+        const SESSION_ID = localStorage.getItem('md_uid') || (() => { const id = 'u_' + crypto.randomUUID(); localStorage.setItem('md_uid', id); return id; })();
         const TOPIC = 'asthma';
         
         class Typewriter {
