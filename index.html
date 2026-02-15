@@ -805,6 +805,15 @@
             const input = getActiveInput();
             const question = input.value.trim();
             if (!question) return;
+            
+            // GA4: track question submission
+            if (typeof gtag === 'function') {
+              gtag('event', 'qa_question_asked', {
+                event_category: 'Q&A',
+                event_label: 'asthma.md',
+                question: question.substring(0, 100)
+              });
+            }
             const suggestions = document.querySelector('.qa-suggestions');
             if (suggestions) suggestions.style.display = 'none';
             addMessage(question, true);
@@ -847,8 +856,13 @@
                 }).catch(() => {});
                 // GA4 engagement events (reduces bounce rate)
                 if (typeof gtag === 'function') {
-                  gtag('event', 'qa_question_asked', { event_category: 'Q&A', event_label: 'asthma.md', value: 1 });
-                  gtag('event', 'qa_response_received', { event_category: 'Q&A', event_label: 'asthma.md', engagement_time_msec: 10000 });
+                  gtag('event', 'qa_answer_received', {
+                    event_category: 'Q&A',
+                    event_label: 'asthma.md',
+                    question: question.substring(0, 100),
+                    answer_length: fullResponse.length,
+                    engagement_time_msec: 10000
+                  });
                 }
 
                 await typewriter.finish();
@@ -879,6 +893,16 @@
                 askQuestion();
             }
         });
+        
+        // GA4: track widget open
+        document.getElementById('qa-input').addEventListener('focus', function() {
+            if (typeof gtag === 'function') {
+                gtag('event', 'qa_widget_opened', {
+                    event_category: 'Q&A',
+                    event_label: 'asthma.md'
+                });
+            }
+        }, { once: true });
         document.getElementById('panel-input').addEventListener('keydown', function(e) {
             if (e.key === 'Enter' && !e.shiftKey) {
                 e.preventDefault();
