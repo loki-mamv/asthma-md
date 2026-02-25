@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://asthma.md/blog/asthma-and-allergies-connection/#article"},
           "wordCount": "923",
           "lastReviewed": "2026-02-24",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Can treating my allergies improve my asthma?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, significantly. Studies show that treating allergic rhinitis with nasal corticosteroids reduces asthma hospitalizations by 30-50%. Allergen immunotherapy can reduce asthma symptoms by 30-40%. And biologic therapies like omalizumab cut severe asthma exacerbations in half. The 'united airway' concept means treating your nose treats your lungs."}}, {"@type": "Question", "name": "Should I get rid of my pet if I have allergic asthma?", "acceptedAnswer": {"@type": "Answer", "text": "This is a personal decision. If testing confirms pet allergy and your asthma is poorly controlled, removing the pet is the most effective intervention. If that's not an option, keep the pet out of the bedroom, use HEPA filtration, wash the pet weekly, and ensure your asthma medications are optimized. Discuss with your allergist."}}, {"@type": "Question", "name": "Do air purifiers help with asthma?", "acceptedAnswer": {"@type": "Answer", "text": "HEPA air purifiers reduce airborne allergen levels and have shown modest benefits for allergic asthma, particularly when used in the bedroom. They work best as part of a comprehensive allergen reduction strategy \u2014 not as a standalone solution. Look for devices rated for your room size with true HEPA filtration."}}, {"@type": "Question", "name": "Can allergy shots prevent asthma in children?", "acceptedAnswer": {"@type": "Answer", "text": "Evidence suggests yes. The PAT study showed that children with allergic rhinitis who received immunotherapy were significantly less likely to develop asthma over 10 years compared to untreated children. This is one of the strongest arguments for early immunotherapy in allergic children."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 </head>
 <body>
@@ -200,6 +205,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

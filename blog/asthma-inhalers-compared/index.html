@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://asthma.md/blog/asthma-inhalers-compared/#article"},
           "wordCount": "747",
           "lastReviewed": "2026-02-19",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "What's the difference between a rescue inhaler and a controller inhaler?", "acceptedAnswer": {"@type": "Answer", "text": "A rescue inhaler (like albuterol) works within minutes to relieve acute asthma symptoms by relaxing airway muscles. A controller inhaler (like fluticasone) is used daily to reduce chronic airway inflammation and prevent symptoms. Think of it as: rescue inhalers treat attacks, controllers prevent them."}}, {"@type": "Question", "name": "Can I use just a rescue inhaler for my asthma?", "acceptedAnswer": {"@type": "Answer", "text": "If you need your rescue inhaler more than twice per week, guidelines recommend adding a daily controller. The 2026 GINA guidelines actually recommend that even mild asthma patients use ICS-containing therapy rather than SABA alone, because SABA-only treatment increases the risk of severe exacerbations."}}, {"@type": "Question", "name": "What is the SMART approach to asthma treatment?", "acceptedAnswer": {"@type": "Answer", "text": "SMART (Single Maintenance and Reliever Therapy) uses one inhaler \u2014 budesonide-formoterol (Symbicort) \u2014 as both your daily controller and your rescue inhaler. Studies show this reduces severe asthma attacks better than using separate controller and rescue inhalers."}}, {"@type": "Question", "name": "Are generic asthma inhalers as effective as brand-name?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. FDA-approved generic inhalers contain the same active ingredient in the same dose and must demonstrate equivalent drug delivery. Generic albuterol and generic Advair (fluticasone-salmeterol) are widely available in 2026 and are clinically equivalent to brand-name versions."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

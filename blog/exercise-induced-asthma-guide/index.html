@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://asthma.md/blog/exercise-induced-asthma-guide/#article"},
           "wordCount": "676",
           "lastReviewed": "2026-02-18",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Can exercise-induced asthma go away on its own?", "acceptedAnswer": {"@type": "Answer", "text": "Some children with EIB outgrow it, but in adults it typically persists. However, improving cardiovascular fitness can reduce symptom severity, and proper pre-treatment makes it highly manageable. Many people find their EIB improves significantly with consistent controller medication."}}, {"@type": "Question", "name": "Is swimming really the best exercise for asthma?", "acceptedAnswer": {"@type": "Answer", "text": "Swimming has traditionally been recommended because warm, humid pool air is less likely to trigger EIB. However, heavily chlorinated pools can irritate airways in some people. Any activity you enjoy and can do consistently is the best exercise for asthma \u2014 with proper management."}}, {"@type": "Question", "name": "Should I use my inhaler before every workout?", "acceptedAnswer": {"@type": "Answer", "text": "If you have confirmed EIB, using albuterol 15-20 minutes before exercise is recommended when you anticipate vigorous activity. If you're using it daily, talk to your doctor about adding a daily controller medication to reduce overall airway reactivity."}}, {"@type": "Question", "name": "Can you be an elite athlete with exercise-induced asthma?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. Studies estimate 8-10% of Olympic athletes have EIB, with rates even higher in endurance and winter sports. Proper diagnosis and management allow full athletic participation at any level."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

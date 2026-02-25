@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://asthma.md/blog/asthma-attack-action-plan/#article"},
           "wordCount": "814",
           "lastReviewed": "2026-02-14",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "How do I know if my asthma is well-controlled?", "acceptedAnswer": {"@type": "Answer", "text": "Well-controlled asthma means: daytime symptoms no more than twice a week, no nighttime awakenings, rescue inhaler use no more than twice a week, no limitations on normal activities, and peak flow above 80% of personal best. If you're not meeting these criteria, your treatment needs adjustment."}}, {"@type": "Question", "name": "Can adults develop asthma for the first time?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Adult-onset asthma is common, particularly in women, and can be triggered by respiratory infections, hormonal changes, occupational exposures, or new allergies. It tends to be more persistent than childhood asthma and often requires daily controller medication."}}, {"@type": "Question", "name": "Is it safe to exercise with asthma?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. Regular exercise improves cardiovascular fitness and lung capacity. Use a rescue inhaler 15 minutes before exercise if needed, warm up gradually, and avoid exercising in very cold or high-pollution conditions. Swimming is particularly well-tolerated due to the warm, humid air."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -324,6 +329,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

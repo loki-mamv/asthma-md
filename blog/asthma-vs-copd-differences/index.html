@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://asthma.md/blog/asthma-vs-copd-differences/#article"},
           "wordCount": "727",
           "lastReviewed": "2026-02-17",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Can you have both asthma and COPD at the same time?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Asthma-COPD Overlap (ACO) affects 15-25% of people with obstructive airway disease. These patients have features of both conditions and typically require a combined treatment approach with both inhaled corticosteroids and long-acting bronchodilators."}}, {"@type": "Question", "name": "I smoked for years and have asthma \u2014 is it now COPD?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily, but smoking with asthma increases the risk of developing fixed airflow obstruction and ACO. Spirometry testing with bronchodilator reversibility can help determine whether you have asthma alone, COPD, or overlap."}}, {"@type": "Question", "name": "What's the main difference between asthma and COPD treatment?", "acceptedAnswer": {"@type": "Answer", "text": "Asthma treatment centers on inhaled corticosteroids to control inflammation, with rescue inhalers for acute symptoms. COPD treatment prioritizes long-acting bronchodilators, with inhaled corticosteroids added only for patients with frequent exacerbations and elevated eosinophils."}}, {"@type": "Question", "name": "Can adults develop asthma for the first time?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Adult-onset asthma is common and can start at any age. It's often non-allergic and may be triggered by respiratory infections, hormonal changes, occupational exposures, or obesity. It should not automatically be assumed to be COPD just because it starts later in life."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

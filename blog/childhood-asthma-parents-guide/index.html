@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://asthma.md/blog/childhood-asthma-parents-guide/#article"},
           "wordCount": "793",
           "lastReviewed": "2026-02-20",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "At what age can a child be diagnosed with asthma?", "acceptedAnswer": {"@type": "Answer", "text": "Asthma can be suspected as early as age 1-2 based on recurrent wheezing episodes and risk factors. Formal diagnosis with spirometry testing is typically possible around age 5-6. Before that, doctors often use the term 'recurrent wheezing' and may start a trial of asthma medications to see if symptoms improve."}}, {"@type": "Question", "name": "Are asthma inhalers safe for children long-term?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Inhaled corticosteroids are the most studied medications in pediatric asthma. At low-to-medium doses, they may cause a small (about 1 cm) reduction in final adult height but dramatically reduce hospitalizations, ER visits, and missed school. The benefits far outweigh the minimal growth effect."}}, {"@type": "Question", "name": "Can my child play sports with asthma?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. With proper pre-treatment (albuterol before exercise) and good baseline control, children with asthma can and should participate in all physical activities. Many professional and Olympic athletes have asthma. Restricting activity due to asthma is no longer recommended."}}, {"@type": "Question", "name": "Should I get allergy testing for my child with asthma?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, allergy testing is recommended for most children with persistent asthma. Identifying specific allergen triggers allows targeted avoidance strategies and helps determine if allergen immunotherapy (allergy shots) might be beneficial. Skin prick testing or blood IgE testing can be done at any age."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>
