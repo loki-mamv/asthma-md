@@ -976,6 +976,12 @@
                     event_label: 'asthma.md'
                 });
             }
+
+                // Email capture: show inline prompt after answer (once per session)
+                if (!sessionStorage.getItem('emailCaptured')) {
+                    setTimeout(() => showEmailCapture(question, fullResponse), 1500);
+                }
+
         }, { once: true });
         document.getElementById('panel-input').addEventListener('keydown', function(e) {
             if (e.key === 'Enter' && !e.shiftKey) {
@@ -983,6 +989,91 @@
                 askQuestion();
             }
         });
+
+        // === EMAIL CAPTURE (auto-injected) ===
+        const QA_EMAIL_ENDPOINT = 'https://script.google.com/macros/s/AKfycbwUqO3zauyG_tuCZk0NALIDybayC7JhTbSm7RcQhivv6Lq0XCrQ8YgopTFqXjMSwt72/exec';
+
+        function showEmailCapture(question, answer) {
+            if (sessionStorage.getItem('emailCaptured')) return;
+            const messagesDiv = getActiveMessagesDiv();
+            if (!messagesDiv) return;
+            const captureId = 'qa-ec-' + Date.now();
+            const captureDiv = document.createElement('div');
+            captureDiv.className = 'chat-message assistant';
+            captureDiv.id = captureId;
+            captureDiv.dataset.question = (question || '').substring(0, 200);
+            captureDiv.dataset.answer = (answer || '').substring(0, 500);
+            captureDiv.innerHTML = `
+                <div class="chat-avatar" style="background:var(--accent-light,#ccfbf1);color:var(--accent-dark,#0f766e);">MD</div>
+                <div class="chat-bubble qa-email-bubble" style="background:var(--bg-secondary,#f8fafc);border:1px solid var(--border,#e2e8f0);border-left:3px solid var(--accent,#0d9488);">
+                    <p style="font-size:13px;color:var(--text-secondary,#475569);margin-bottom:10px;line-height:1.5;">
+                        \ud83d\udcec <strong style="color:var(--text-primary,#0f172a);">Get follow-up tips via email?</strong>
+                    </p>
+                    <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+                        <input type="email" id="qi-${captureId}" placeholder="your@email.com" autocomplete="email"
+                            style="flex:1;min-width:160px;padding:8px 12px;border:1px solid var(--border,#e2e8f0);border-radius:6px;font-size:13px;outline:none;font-family:inherit;color:var(--text-primary,#0f172a);background:var(--bg-primary,#fff);"
+                            onkeydown="if(event.key==='Enter'){event.preventDefault();submitQAEmail('${captureId}');}"
+                            onfocus="this.style.borderColor='var(--accent,#0d9488)'"
+                            onblur="this.style.borderColor='var(--border,#e2e8f0)'">
+                        <button id="qb-${captureId}" onclick="submitQAEmail('${captureId}')"
+                            style="padding:8px 18px;background:var(--accent,#0d9488);color:white;border:none;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap;font-family:inherit;"
+                            onmouseover="this.style.background='var(--accent-dark,#0f766e)'"
+                            onmouseout="this.style.background='var(--accent,#0d9488)'">Get tips</button>
+                        <button onclick="dismissEmailCapture('${captureId}')"
+                            style="padding:6px 10px;background:none;border:none;color:var(--text-muted,#94a3b8);font-size:12px;cursor:pointer;font-family:inherit;">No thanks</button>
+                    </div>
+                    <p style="font-size:11px;color:var(--text-muted,#94a3b8);margin-top:8px;">No spam \u00b7 Unsubscribe anytime</p>
+                </div>`;
+            messagesDiv.appendChild(captureDiv);
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+            setTimeout(() => { const el = document.getElementById('qi-'+captureId); if(el) el.focus(); }, 100);
+        }
+
+        function submitQAEmail(captureId) {
+            const emailEl = document.getElementById('qi-' + captureId);
+            const btnEl = document.getElementById('qb-' + captureId);
+            const wrapEl = document.getElementById(captureId);
+            if (!emailEl || !btnEl || !wrapEl) return;
+            const email = emailEl.value.trim();
+            if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                emailEl.style.borderColor = '#ef4444'; emailEl.focus(); return;
+            }
+            emailEl.style.borderColor = '';
+            btnEl.textContent = '...'; btnEl.disabled = true; emailEl.disabled = true;
+            const fd = new FormData();
+            fd.append('email', email);
+            fd.append('source', window.location.hostname);
+            fd.append('question', wrapEl.dataset.question || '');
+            fd.append('answer', wrapEl.dataset.answer || '');
+            fd.append('type', 'qa_capture');
+            fetch(QA_EMAIL_ENDPOINT, { method: 'POST', body: fd, mode: 'no-cors' })
+                .then(() => showQAEmailSuccess(captureId))
+                .catch(() => showQAEmailSuccess(captureId));
+            sessionStorage.setItem('emailCaptured', 'true');
+            if (typeof gtag === 'function') {
+                gtag('event', 'qa_email_captured', { event_category: 'Email', event_label: window.location.hostname });
+            }
+        }
+
+        function showQAEmailSuccess(captureId) {
+            const wrapEl = document.getElementById(captureId);
+            if (!wrapEl) return;
+            const bubble = wrapEl.querySelector('.qa-email-bubble');
+            if (bubble) bubble.innerHTML = `
+                <p style="color:var(--accent,#0d9488);font-weight:600;font-size:13px;margin-bottom:6px;">\u2713 You're in! We'll send follow-up tips to your inbox.</p>
+                <p style="font-size:12px;color:var(--text-muted,#94a3b8);">
+                    <a href="#" onclick="event.preventDefault();document.getElementById('qa-input').value='';document.getElementById('qa-input').focus();" style="color:var(--accent,#0d9488);text-decoration:underline;">Ask another question \u2192</a>
+                </p>`;
+            const md = getActiveMessagesDiv();
+            if (md) md.scrollTop = md.scrollHeight;
+        }
+
+        function dismissEmailCapture(captureId) {
+            const el = document.getElementById(captureId);
+            if (el) { el.style.opacity = '0'; el.style.transition = 'opacity 0.3s'; setTimeout(() => el.remove(), 300); }
+        }
+        // === End Email Capture ===
+
     </script>
 </body>
 </html>
