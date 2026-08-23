@@ -61,107 +61,145 @@
     
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Organization",
-          "@id": "https://thrive.md/#organization",
-          "name": "thrive.md",
-          "url": "https://thrive.md",
-          "description": "A network of premium health domains providing evidence-based medical information."
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://asthma.md/#website",
-          "url": "https://asthma.md",
-          "name": "asthma.md — Understanding and Managing Asthma",
-          "publisher": {"@id": "https://thrive.md/#organization"},
-          "isPartOf": {"@id": "https://thrive.md/#organization"}
-        },
-        {
-          "@type": "MedicalWebPage",
-          "@id": "https://asthma.md/#webpage",
-          "name": "Understanding and Managing Asthma",
-          "description": "Evidence-based information about asthma triggers, symptoms, treatments, and management strategies.",
-          "url": "https://asthma.md/",
-          "isPartOf": {"@id": "https://asthma.md/#website"},
-          "lastReviewed": "2026-02-04",
-          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"},
-          "mainEntity": {
-            "@type": "MedicalCondition",
-            "name": "Asthma",
-            "alternateName": ["Bronchial Asthma", "Allergic Asthma"],
-            "description": "A chronic respiratory condition characterized by inflammation and narrowing of the airways, leading to breathing difficulties.",
-            "possibleTreatment": [
-              {"@type": "MedicalTherapy", "name": "Inhaled Corticosteroids"},
-              {"@type": "MedicalTherapy", "name": "Bronchodilators (Rescue Inhalers)"},
-              {"@type": "MedicalTherapy", "name": "Long-Acting Beta Agonists"},
-              {"@type": "MedicalTherapy", "name": "Biologic Therapies"}
-            ],
-            "riskFactor": [
-              {"@type": "MedicalRiskFactor", "name": "Family history"},
-              {"@type": "MedicalRiskFactor", "name": "Allergies"},
-              {"@type": "MedicalRiskFactor", "name": "Environmental exposures"}
-            ],
-            "epidemiology": "Affects 25 million Americans, including 5 million children"
+      "@type": "Organization",
+      "@id": "https://thrive.md/#organization",
+      "name": "thrive.md",
+      "url": "https://thrive.md",
+      "description": "A network of premium health domains providing evidence-based medical information."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://asthma.md/#website",
+      "url": "https://asthma.md",
+      "name": "asthma.md — Understanding and Managing Asthma",
+      "publisher": {
+        "@id": "https://thrive.md/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://thrive.md/#organization"
+      }
+    },
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://asthma.md/#webpage",
+      "name": "Understanding and Managing Asthma",
+      "description": "Evidence-based information about asthma triggers, symptoms, treatments, and management strategies.",
+      "url": "https://asthma.md/",
+      "isPartOf": {
+        "@id": "https://asthma.md/#website"
+      },
+      "lastReviewed": "2026-02-04",
+      "reviewedBy": {
+        "@type": "Person",
+        "name": "Dr. Agustin Arrieta",
+        "jobTitle": "MD"
+      },
+      "mainEntity": {
+        "@type": "MedicalCondition",
+        "name": "Asthma",
+        "alternateName": [
+          "Bronchial Asthma",
+          "Allergic Asthma"
+        ],
+        "description": "A chronic respiratory condition characterized by inflammation and narrowing of the airways, leading to breathing difficulties.",
+        "possibleTreatment": [
+          {
+            "@type": "MedicalTherapy",
+            "name": "Inhaled Corticosteroids"
           },
-          "about": {
-            "@type": "MedicalCondition",
-            "name": "Asthma"
+          {
+            "@type": "MedicalTherapy",
+            "name": "Bronchodilators (Rescue Inhalers)"
           },
-          "audience": {
-            "@type": "PeopleAudience",
-            "healthCondition": {
-              "@type": "MedicalCondition",
-              "name": "Asthma"
-            }
+          {
+            "@type": "MedicalTherapy",
+            "name": "Long-Acting Beta Agonists"
           },
-          "speakable": {
-            "@type": "SpeakableSpecification",
-            "cssSelector": [".hero h1", ".hero-subtitle", ".stat-number"]
+          {
+            "@type": "MedicalTherapy",
+            "name": "Biologic Therapies"
+          }
+        ],
+        "riskFactor": [
+          {
+            "@type": "MedicalRiskFactor",
+            "name": "Family history"
+          },
+          {
+            "@type": "MedicalRiskFactor",
+            "name": "Allergies"
+          },
+          {
+            "@type": "MedicalRiskFactor",
+            "name": "Environmental exposures"
+          }
+        ],
+        "epidemiology": "Affects 25 million Americans, including 5 million children"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Asthma"
+      },
+      "audience": {
+        "@type": "PeopleAudience",
+        "healthCondition": {
+          "@type": "MedicalCondition",
+          "name": "Asthma"
+        }
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".hero h1",
+          ".hero-subtitle",
+          ".stat-number"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://asthma.md/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What triggers asthma attacks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Common asthma triggers include allergens (pollen, dust mites, pet dander, mold), respiratory infections, cold air, exercise, smoke, strong odors, air pollution, and stress. Triggers vary by person. Identifying and avoiding your specific triggers is a key part of asthma management."
           }
         },
         {
-          "@type": "FAQPage",
-          "@id": "https://asthma.md/#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "What triggers asthma attacks?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Common asthma triggers include allergens (pollen, dust mites, pet dander, mold), respiratory infections, cold air, exercise, smoke, strong odors, air pollution, and stress. Triggers vary by person. Identifying and avoiding your specific triggers is a key part of asthma management."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What are the symptoms of asthma?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Common asthma symptoms include wheezing, shortness of breath, chest tightness, and persistent cough (especially at night or early morning). Symptoms may worsen with exercise, allergies, or respiratory infections. Severe symptoms require immediate medical attention."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How is asthma treated?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Asthma treatment includes controller medications (inhaled corticosteroids, long-acting bronchodilators) for daily use and rescue inhalers (short-acting bronchodilators) for quick relief during flare-ups. Severe cases may require biologic therapies. Treatment is personalized based on severity and control level."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Can asthma be cured?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Asthma cannot be cured, but it can be effectively controlled. With proper treatment and trigger management, most people with asthma live active, normal lives. Some children experience improvement or remission as they grow, though asthma can return in adulthood."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "What are the symptoms of asthma?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Common asthma symptoms include wheezing, shortness of breath, chest tightness, and persistent cough (especially at night or early morning). Symptoms may worsen with exercise, allergies, or respiratory infections. Severe symptoms require immediate medical attention."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is asthma treated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Asthma treatment includes controller medications (inhaled corticosteroids, long-acting bronchodilators) for daily use and rescue inhalers (short-acting bronchodilators) for quick relief during flare-ups. Severe cases may require biologic therapies. Treatment is personalized based on severity and control level."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can asthma be cured?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Asthma cannot be cured, but it can be effectively controlled. With proper treatment and trigger management, most people with asthma live active, normal lives. Some children experience improvement or remission as they grow, though asthma can return in adulthood."
+          }
         }
       ]
     }
+  ]
+}
     </script>
     
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
@@ -685,6 +723,24 @@
             <p>Work with your healthcare provider to create a personalized asthma action plan that outlines daily management and emergency response.</p>
             <a href="/resources.html" class="cta-button">View Resources</a>
         </div>
+        <section class="section" id="faq">
+            <div class="section-label" style="font-size: 12px; font-weight: 600; color: var(--accent, #0d9488); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">FAQ</div>
+            <h2>Frequently asked questions</h2>
+            <div style="margin-top: 20px;">
+                <div style="border-bottom: 1px solid var(--border, #e2e8f0); padding: 20px 0;">
+                    <h3 style="font-size: 17px; font-weight: 600; margin-bottom: 8px; font-family: var(--font-display, Georgia, serif);">What are the symptoms of asthma?</h3>
+                    <p style="font-size: 16px; color: var(--text-secondary, #475569); margin: 0;">Common asthma symptoms include wheezing, shortness of breath, chest tightness, and persistent cough (especially at night or early morning). Symptoms may worsen with exercise, allergies, or respiratory infections. Severe symptoms require immediate medical attention.</p>
+                </div>
+                <div style="border-bottom: 1px solid var(--border, #e2e8f0); padding: 20px 0;">
+                    <h3 style="font-size: 17px; font-weight: 600; margin-bottom: 8px; font-family: var(--font-display, Georgia, serif);">How is asthma treated?</h3>
+                    <p style="font-size: 16px; color: var(--text-secondary, #475569); margin: 0;">Asthma treatment includes controller medications (inhaled corticosteroids, long-acting bronchodilators) for daily use and rescue inhalers (short-acting bronchodilators) for quick relief during flare-ups. Severe cases may require biologic therapies. Treatment is personalized based on severity and control level.</p>
+                </div>
+                <div style="border-bottom: 1px solid var(--border, #e2e8f0); padding: 20px 0;">
+                    <h3 style="font-size: 17px; font-weight: 600; margin-bottom: 8px; font-family: var(--font-display, Georgia, serif);">Can asthma be cured?</h3>
+                    <p style="font-size: 16px; color: var(--text-secondary, #475569); margin: 0;">Asthma cannot be cured, but it can be effectively controlled. With proper treatment and trigger management, most people with asthma live active, normal lives. Some children experience improvement or remission as they grow, though asthma can return in adulthood.</p>
+                </div>
+            </div>
+        </section>
 
         <section class="section" id="related">
             <div class="section-label" style="font-size: 12px; font-weight: 600; color: var(--accent, #0d9488); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">Related Topics</div>

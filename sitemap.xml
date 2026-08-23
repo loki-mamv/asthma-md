@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://asthma.md/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://asthma.md/blog/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://asthma.md/blog/asthma-attack-action-plan/</loc><lastmod>2026-02-14</lastmod><priority>0.7</priority></url>
-  <url><loc>https://asthma.md/blog/asthma-vs-copd-differences/</loc><lastmod>2026-02-17</lastmod><priority>0.7</priority></url>
-  <url><loc>https://asthma.md/blog/exercise-induced-asthma-guide/</loc><lastmod>2026-02-18</lastmod><priority>0.7</priority></url>
-  <url><loc>https://asthma.md/blog/asthma-inhalers-compared/</loc><lastmod>2026-02-19</lastmod><priority>0.7</priority></url>
-  <url><loc>https://asthma.md/blog/childhood-asthma-parents-guide/</loc><lastmod>2026-02-20</lastmod><priority>0.7</priority></url>
+  <url><loc>https://asthma.md/</loc><lastmod>2026-08-14</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://asthma.md/blog/</loc><lastmod>2026-08-23</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://asthma.md/about.html</loc><lastmod>2026-02-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://asthma.md/faq.html</loc><lastmod>2026-02-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://asthma.md/resources.html</loc><lastmod>2026-02-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://asthma.md/blog/asthma-action-plans.html</loc><lastmod>2026-02-24</lastmod><priority>0.7</priority></url>
   <url><loc>https://asthma.md/blog/asthma-and-allergies-connection/</loc><lastmod>2026-02-24</lastmod><priority>0.7</priority></url>
-  <url><loc>https://asthma.md/blog/why-is-asthma-worse-at-night/</loc><lastmod>2026-08-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://asthma.md/blog/asthma-attack-action-plan/</loc><lastmod>2026-02-14</lastmod><priority>0.7</priority></url>
+  <url><loc>https://asthma.md/blog/asthma-inhalers-compared/</loc><lastmod>2026-02-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://asthma.md/blog/asthma-vs-copd-differences/</loc><lastmod>2026-02-17</lastmod><priority>0.7</priority></url>
   <url><loc>https://asthma.md/blog/can-you-develop-asthma-as-an-adult/</loc><lastmod>2026-08-21</lastmod><priority>0.7</priority></url>
+  <url><loc>https://asthma.md/blog/childhood-asthma-guide.html</loc><lastmod>2026-02-24</lastmod><priority>0.7</priority></url>
+  <url><loc>https://asthma.md/blog/childhood-asthma-parents-guide/</loc><lastmod>2026-02-20</lastmod><priority>0.7</priority></url>
+  <url><loc>https://asthma.md/blog/common-asthma-triggers.html</loc><lastmod>2026-02-24</lastmod><priority>0.7</priority></url>
   <url><loc>https://asthma.md/blog/does-asthma-go-away/</loc><lastmod>2026-08-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://asthma.md/blog/exercise-induced-asthma-guide/</loc><lastmod>2026-02-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://asthma.md/blog/exercise-induced-asthma.html</loc><lastmod>2026-02-24</lastmod><priority>0.7</priority></url>
+  <url><loc>https://asthma.md/blog/inhaler-types-guide.html</loc><lastmod>2026-02-24</lastmod><priority>0.7</priority></url>
+  <url><loc>https://asthma.md/blog/seasonal-asthma-management.html</loc><lastmod>2026-02-24</lastmod><priority>0.7</priority></url>
+  <url><loc>https://asthma.md/blog/why-is-asthma-worse-at-night/</loc><lastmod>2026-08-18</lastmod><priority>0.7</priority></url>
 </urlset>
