@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6H85DH0R8S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6H85DH0R8S');
+</script>
+<script>
+  // AI answer-engine attribution: capture utm/app/referrer signals on landing
+  (function(){
+    try {
+      var q = new URLSearchParams(location.search);
+      var ref = document.referrer || '';
+      var refHost = '';
+      if (ref) { try { refHost = new URL(ref).hostname; } catch(e) {} }
+      var ua = navigator.userAgent || '';
+      var hint = /ChatGPT|OAI-/i.test(ua) ? 'chatgpt-app' : /Perplexity/i.test(ua) ? 'perplexity-app' : /Claude/i.test(ua) ? 'claude-app' : '';
+      gtag('event', 'ai_attribution', {
+        ai_utm: q.get('utm_source') || '(none)',
+        ai_ref: refHost || '(direct)',
+        ai_ua_hint: hint || '(none)'
+      });
+    } catch(e) {}
+  })();
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Does a Peak Flow Meter Reading Actually Tell You? &mdash; asthma.md</title>
+    <meta name="description" content="A peak flow reading shows how fast you push air out, in liters per minute. 80% or more of your personal best is the green zone; below 50% is an emergency.">
+    <meta name="author" content="thrive.md Editorial Team">
+    <link rel="canonical" href="https://asthma.md/blog/what-does-a-peak-flow-meter-reading-tell-you/">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://asthma.md/blog/what-does-a-peak-flow-meter-reading-tell-you/">
+    <meta property="og:title" content="What Does a Peak Flow Meter Reading Actually Tell You? &mdash; asthma.md">
+    <meta property="og:description" content="A peak flow reading shows how fast you push air out, in liters per minute. 80% or more of your personal best is the green zone; below 50% is an emergency.">
+    <meta property="og:site_name" content="asthma.md">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="What Does a Peak Flow Meter Reading Actually Tell You? &mdash; asthma.md">
+    <meta name="twitter:description" content="A peak flow reading shows how fast you push air out, in liters per minute. 80% or more of your personal best is the green zone; below 50% is an emergency.">
+    <meta name="ai-content" content="allowed">
+    <meta name="ai-topic" content="peak flow meter reading, peak expiratory flow PEF, personal best peak flow, asthma green yellow red zones, diurnal PEF variability, peak flow vs spirometry, asthma action plan monitoring, peak flow technique">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Article",
+        "MedicalWebPage"
+      ],
+      "@id": "https://asthma.md/blog/what-does-a-peak-flow-meter-reading-tell-you/#article",
+      "headline": "What Does a Peak Flow Meter Reading Actually Tell You?",
+      "description": "A peak flow reading shows how fast you push air out, in liters per minute. 80% or more of your personal best is the green zone; below 50% is an emergency.",
+      "url": "https://asthma.md/blog/what-does-a-peak-flow-meter-reading-tell-you/",
+      "datePublished": "2026-09-01",
+      "dateModified": "2026-09-01",
+      "author": {
+        "@type": "Organization",
+        "name": "thrive.md Editorial Team",
+        "url": "https://thrive.md"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "asthma.md",
+        "url": "https://asthma.md"
+      },
+      "isPartOf": {
+        "@id": "https://asthma.md/#website"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://asthma.md/blog/what-does-a-peak-flow-meter-reading-tell-you/#article"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Asthma"
+      },
+      "wordCount": "1230",
+      "contributor": {
+        "@type": "Person",
+        "name": "Agustin Arrieta, MD",
+        "jobTitle": "Otolaryngologist",
+        "medicalSpecialty": "Otolaryngologic"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is a peak flow meter the same as spirometry?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Spirometry is a clinic test that measures both flow and volume, including FEV1, and it follows strict quality standards. A peak flow meter captures one number: your fastest exhalation. NIH reference material calls peak flow useful for home monitoring, especially when spirometry is not available, but it does not replace spirometry for diagnosis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should I check my peak flow?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Follow your action plan. To set a personal best, NIH reference material says to record readings 2 to 4 times daily for 2 weeks while your asthma is well controlled. After that, many people check each morning, during symptoms, and after reliever use. Ask your doctor what schedule fits your asthma."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is my peak flow lower in the morning?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lung function follows a daily rhythm and dips overnight, so morning readings often run lower than evening readings. GINA uses this swing as a diagnostic clue. Average daily variability above 10% in adults, or above 13% in children, counts as evidence of variable airflow. A widening morning-evening gap can signal worsening control."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What peak flow number should send me to the emergency room?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Any reading below 50% of your personal best is the red zone. Take your quick-relief medicine and get medical help fast if the number does not recover. As an absolute marker, NIH reference material states that a peak flow below 200 L/min indicates severe obstruction for most adults younger than 65."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do children use different peak flow zones?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The zone percentages are the same: 80% to 100% of personal best is green, 50% to 80% is yellow, and below 50% is red. The raw numbers differ because normal peak flow depends on height and age. The American Lung Association notes that children as young as 5 can usually use a peak flow meter."
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent: #0d9488;
+            --accent-dark: #0f766e;
+            --border: #e2e8f0;
+            --font-display: 'Source Serif 4', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-body); background: #fafaf9; color: var(--text-primary); line-height: 1.7; font-size: 16px; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { color: var(--accent-dark); text-decoration: underline; }
+
+        /* Header */
+        .site-header { border-bottom: 1px solid var(--border); padding: 1rem 0; background: #fff; }
+        .site-header .container { display: flex; align-items: center; justify-content: space-between; }
+        .site-logo { font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; color: var(--accent); }
+        .site-nav a { margin-left: 1.5rem; color: var(--text-secondary); font-size: 0.9rem; }
+
+        .container { max-width: 720px; margin: 0 auto; padding: 0 1.5rem; }
+        .container-wide { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; }
+
+        /* Article */
+        .article-header { padding: 3rem 0 2rem; }
+        .article-header h1 { font-family: var(--font-display); font-size: 2.25rem; line-height: 1.25; font-weight: 700; margin-bottom: 1rem; }
+        .article-meta { color: var(--text-muted); font-size: 0.875rem; display: flex; gap: 1.5rem; flex-wrap: wrap; }
+        .article-meta time, .article-meta .reading-time { display: flex; align-items: center; gap: 0.35rem; }
+
+        /* TOC */
+        .toc { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem 1.5rem; margin-bottom: 2rem; }
+        .toc-title { font-weight: 600; font-size: 0.9rem; margin-bottom: 0.75rem; color: var(--text-primary); }
+        .toc ol { padding-left: 1.25rem; }
+        .toc li { margin-bottom: 0.35rem; font-size: 0.9rem; }
+        .toc a { color: var(--text-secondary); }
+
+        /* Content */
+        .article-body { padding-bottom: 2rem; }
+        .article-body h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+        .article-body h3 { font-size: 1.2rem; font-weight: 600; margin: 1.5rem 0 0.75rem; }
+        .article-body p { margin-bottom: 1.25rem; }
+        .article-body ul, .article-body ol { margin-bottom: 1.25rem; padding-left: 1.5rem; }
+        .article-body li { margin-bottom: 0.5rem; }
+        .article-body blockquote { border-left: 3px solid var(--accent); padding: 0.75rem 1rem; background: var(--bg-secondary); margin-bottom: 1.25rem; font-style: italic; color: var(--text-secondary); }
+        .article-body .source-cite { font-size: 0.8rem; color: var(--text-muted); }
+        .article-body .source-cite a { color: var(--accent); }
+
+        /* FAQ */
+        .faq-section { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; padding: 2rem; margin: 2rem 0; }
+        .faq-section h2 { border: none; margin-top: 0; padding-top: 0; }
+        .faq-item { margin-bottom: 1.5rem; }
+        .faq-item:last-child { margin-bottom: 0; }
+        .faq-item h3 { font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--accent-dark); }
+        .faq-item p { color: var(--text-secondary); font-size: 0.95rem; }
+
+        /* Share */
+        .share-bar { display: flex; gap: 0.75rem; margin: 2rem 0; padding: 1.5rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); align-items: center; }
+        .share-bar span { font-size: 0.875rem; color: var(--text-muted); }
+        .share-btn { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.85rem; font-weight: 500; border: 1px solid var(--border); color: var(--text-secondary); background: #fff; cursor: pointer; transition: all 0.2s; }
+        .share-btn:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+
+        /* Related */
+        .related-posts { margin: 2rem 0; }
+        .related-posts h2 { font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 1rem; border: none; padding: 0; }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+        .related-card { border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; background: #fff; transition: border-color 0.2s; }
+        .related-card:hover { border-color: var(--accent); }
+        .related-card h3 { font-size: 0.95rem; margin-bottom: 0.5rem; }
+        .related-card p { font-size: 0.8rem; color: var(--text-muted); }
+
+        /* Cross-links */
+        .cross-links { margin: 2rem 0; padding: 1.5rem; background: var(--bg-secondary); border-radius: 8px; }
+        .cross-links h3 { font-size: 0.95rem; margin-bottom: 0.75rem; color: var(--text-secondary); }
+        .cross-links-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .cross-links-list a { padding: 0.35rem 0.75rem; border: 1px solid var(--border); border-radius: 20px; font-size: 0.8rem; color: var(--text-secondary); background: #fff; }
+        .cross-links-list a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+
+        /* Disclaimer */
+        .disclaimer { margin: 2rem 0; padding: 1.25rem; background: #fefce8; border: 1px solid #fde68a; border-radius: 8px; font-size: 0.8rem; color: #92400e; line-height: 1.6; }
+
+        /* Footer */
+        .site-footer { border-top: 1px solid var(--border); padding: 2rem 0; margin-top: 2rem; text-align: center; }
+        .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-bottom: 1rem; }
+        .footer-links a { font-size: 0.8rem; color: var(--text-muted); }
+        .footer-copy { font-size: 0.75rem; color: var(--text-muted); }
+
+        @media (max-width: 640px) {
+            .article-header h1 { font-size: 1.75rem; }
+            .related-grid { grid-template-columns: 1fr; }
+        }
+
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container-wide">
+            <a href="https://asthma.md/" class="site-logo">asthma.md</a>
+            <nav class="site-nav">
+                <a href="https://asthma.md/">Home</a>
+                <a href="https://asthma.md/blog/">Blog</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="container">
+            <header class="article-header">
+                <h1>What Does a Peak Flow Meter Reading Actually Tell You?</h1>
+                <div class="article-meta">
+                    <time datetime="2026-09-01">September 1, 2026</time>
+                    <span class="reading-time">7 min read</span>
+                    <span>By thrive.md Editorial Team</span>
+                </div>
+                    <div class="medical-reviewer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span>Medical advisor: Agustin Arrieta, MD &mdash; Otolaryngologist (ENT), South Florida</span></div>
+            </header>
+
+            <nav class="toc"><div class="toc-title">Table of Contents</div><ol><li><a href="#what-does-the-number-on-the-meter-measure">What does the number on the meter measure?</a></li><li><a href="#what-counts-as-a-normal-peak-flow-reading">What counts as a normal peak flow reading?</a></li><li><a href="#how-do-you-find-your-personal-best">How do you find your personal best?</a></li><li><a href="#what-do-the-green-yellow-and-red-zones-mean">What do the green, yellow, and red zones mean?</a></li><li><a href="#can-a-reading-warn-you-before-symptoms-start">Can a reading warn you before symptoms start?</a></li><li><a href="#how-do-you-get-an-accurate-reading">How do you get an accurate reading?</a></li><li><a href="#what-are-the-limits-of-a-peak-flow-meter">What are the limits of a peak flow meter?</a></li><li><a href="#the-bottom-line">The bottom line</a></li></ol></nav>
+
+            <div class="article-body">
+<p><strong>The short answer:</strong> A peak flow reading measures how fast you can push air out of your lungs after a full breath in. The unit is liters per minute. The raw number matters less than the comparison to your personal best. A reading at 80% to 100% of your personal best means good control. A reading between 50% and 80% signals caution. A reading below 50% is a medical emergency. Falling readings can appear hours or days before you feel symptoms.</p>
+
+<h2 id="what-does-the-number-on-the-meter-measure">What does the number on the meter measure?</h2>
+
+<p>The number is your peak expiratory flow, or PEF. The <a href="https://www.ncbi.nlm.nih.gov/books/NBK459325/">NIH StatPearls review of peak flow measurement</a> defines it as the maximal exhalation rate after a full inspiration. In plain terms, it is the top speed of your hardest, fastest blow. Narrow airways slow that blow down, so the number falls when your asthma flares.</p>
+
+<p>The reading gives an objective measure of airflow limitation. That word "objective" is the whole point. Symptoms are easy to misjudge, downplay, or blame on something else. A number on a scale is harder to argue with. This is why written asthma action plans often build their steps around peak flow readings.</p>
+
+<h2 id="what-counts-as-a-normal-peak-flow-reading">What counts as a normal peak flow reading?</h2>
+
+<p>There is no single normal number. The <a href="https://www.lung.org/lung-health-diseases/lung-disease-lookup/asthma/treatment/devices/peak-flow">American Lung Association</a> states that a normal peak flow rate depends on your age, height, sex, and race. A tall young man and a short older woman can both be healthy with very different readings. Reference charts exist, but they only give a rough starting point.</p>
+
+<p>This is why clinicians anchor everything to your own baseline instead. Your action plan zones use your personal best, not a population chart. One absolute cutoff is worth knowing. <a href="https://www.ncbi.nlm.nih.gov/books/NBK459325/">StatPearls</a> notes that a peak flow below 200 L/min indicates severe obstruction for most adults younger than 65.</p>
+
+<h2 id="how-do-you-find-your-personal-best">How do you find your personal best?</h2>
+
+<p>You measure it during a stretch when your asthma is well controlled. StatPearls advises recording peak flow in a diary 2 to 4 times daily for 2 weeks. The <a href="https://aafa.org/asthma/asthma-diagnosis/lung-function-tests-diagnose-asthma/peak-flow-meters/">Asthma and Allergy Foundation of America (AAFA)</a> describes the same process over a 2 to 3 week window. Your personal best is the single highest number from that period.</p>
+
+<p>Timing matters because lung function swings through the day. The American Lung Association suggests measuring at consistent times, for example between 7 and 9 a.m. and between 6 and 8 p.m. Redo the process when you get a new meter, because readings vary between devices. Update your action plan whenever your personal best changes.</p>
+
+<h2 id="what-do-the-green-yellow-and-red-zones-mean">What do the green, yellow, and red zones mean?</h2>
+
+<p>Action plans divide your readings into three zones, like a traffic light. The cutoffs below come from <a href="https://www.ncbi.nlm.nih.gov/books/NBK459325/">StatPearls</a> and the <a href="https://www.nhlbi.nih.gov/resources/asthma-action-plan-2020">NHLBI asthma action plan</a> framework.</p>
+
+<ul>
+<li><strong>Green zone: 80% to 100% of personal best.</strong> Your airways are open. Keep taking your controller medicine as prescribed. No extra action is needed.</li>
+<li><strong>Yellow zone: 50% to 80% of personal best.</strong> Your airways are narrowing. Follow the yellow-zone steps on your action plan, which usually start with your quick-relief inhaler. Contact your clinician if readings do not return to green.</li>
+<li><strong>Red zone: below 50% of personal best.</strong> This signals severe obstruction and a possible medical emergency. Take your quick-relief medicine immediately and get medical help if the number does not recover.</li>
+</ul>
+
+<p>The zones only work when they connect to written instructions. If you own a meter but have no plan, ask your doctor to complete one. Our walkthrough of the steps is at <a href="/blog/asthma-attack-action-plan/">asthma attack action plan</a>.</p>
+
+<h2 id="can-a-reading-warn-you-before-symptoms-start">Can a reading warn you before symptoms start?</h2>
+
+<p>Yes, and this is the meter's most useful trick. <a href="https://aafa.org/asthma/asthma-diagnosis/lung-function-tests-diagnose-asthma/peak-flow-meters/">AAFA</a> states that a peak flow meter can measure airway narrowing hours, even days, before you have any asthma symptoms. AAFA also notes that a drop of 20% to 30% from your personal best may mean the start of an asthma episode. Early medicine at that point can head off a serious attack.</p>
+
+<p>The gap between your morning and evening readings tells its own story. Lung function dips overnight, which is one reason <a href="/blog/why-is-asthma-worse-at-night/">asthma is often worse at night</a>. The <a href="https://ginasthma.org/wp-content/uploads/2025/11/GINA-2025-Update-25_11_08-WMS.pdf">GINA 2025 report</a> uses this swing as a diagnostic sign. Average daily PEF variability above 10% in adults, or above 13% in children, counts as evidence of variable airflow. GINA calculates it as the day's highest reading minus the lowest, divided by the mean of the two, averaged over 2 weeks. A widening swing suggests your control is slipping even if you feel fine.</p>
+
+<h2 id="how-do-you-get-an-accurate-reading">How do you get an accurate reading?</h2>
+
+<p>Technique drives the number, so sloppy blows produce false alarms. The <a href="https://www.lung.org/lung-health-diseases/lung-disease-lookup/asthma/treatment/devices/peak-flow">American Lung Association</a> lists these steps:</p>
+
+<ul>
+<li>Stand up straight and slide the marker to zero.</li>
+<li>Take the deepest breath you can.</li>
+<li>Seal your lips tightly around the mouthpiece. Keep your tongue out of the opening.</li>
+<li>Blow out as hard and as fast as you can in a single blast.</li>
+<li>Repeat three times and record the highest of the three readings.</li>
+</ul>
+
+<p>Measure at about the same times each day so readings stay comparable. A cough or a spit-like blow into the meter inflates the number, so redo any blow that feels off. Cold air, exercise, and trigger exposure can all lower a single reading, so note the context in your diary. Our list of <a href="/blog/common-asthma-triggers.html">common asthma triggers</a> covers what to watch for.</p>
+
+<h2 id="what-are-the-limits-of-a-peak-flow-meter">What are the limits of a peak flow meter?</h2>
+
+<p>A peak flow meter is not a diagnostic device on its own. <a href="https://www.ncbi.nlm.nih.gov/books/NBK459325/">StatPearls</a> describes it as most valuable when spirometry is unavailable. Spirometry, done in a clinic, measures both flow and volume and remains the standard for diagnosis. Peak flow is also effort-dependent. The depth of your breath, your muscle strength, and your effort all change the result.</p>
+
+<p>Two more caveats matter. In severe asthma, peak flow can underestimate how blocked the airways really are, so never let a "decent" number override red-zone symptoms. And reviews cited by StatPearls found that symptom-based self-management works about as well as peak flow monitoring for many people. The meter earns its keep most in people who feel symptoms poorly or late. Breathlessness with a normal peak flow can also point away from the airways. Panic and hyperventilation cause chest tightness too, a pattern covered at <a href="https://anxiety.md/">anxiety.md</a>. Ask your doctor whether daily readings, symptom tracking, or both fit your situation.</p>
+
+<h2 id="the-bottom-line">The bottom line</h2>
+
+<p>A peak flow reading is the top speed of your exhale, in liters per minute. By itself the number means little. Against your personal best, it becomes a control gauge: 80% or better is green, 50% to 80% is yellow, and below 50% is red. Falling readings and widening morning-evening swings can flag trouble days before symptoms arrive. Set your personal best over 2 weeks of good control, blow three times, keep the highest, and wire the numbers into a written action plan.</p>
+
+<p><em>Last updated: September 2026. This article is for informational purposes only and does not constitute medical advice. Talk with your doctor or asthma specialist before changing how you monitor or treat your asthma.</em></p>
+            </div>
+
+            <div class="faq-section"><h2>Frequently Asked Questions</h2><div class="faq-item"><h3>Is a peak flow meter the same as spirometry?</h3><p>No. Spirometry is a clinic test that measures both flow and volume, including FEV1, and it follows strict quality standards. A peak flow meter captures one number: your fastest exhalation. NIH reference material calls peak flow useful for home monitoring, especially when spirometry is not available, but it does not replace spirometry for diagnosis.</p></div><div class="faq-item"><h3>How often should I check my peak flow?</h3><p>Follow your action plan. To set a personal best, NIH reference material says to record readings 2 to 4 times daily for 2 weeks while your asthma is well controlled. After that, many people check each morning, during symptoms, and after reliever use. Ask your doctor what schedule fits your asthma.</p></div><div class="faq-item"><h3>Why is my peak flow lower in the morning?</h3><p>Lung function follows a daily rhythm and dips overnight, so morning readings often run lower than evening readings. GINA uses this swing as a diagnostic clue. Average daily variability above 10% in adults, or above 13% in children, counts as evidence of variable airflow. A widening morning-evening gap can signal worsening control.</p></div><div class="faq-item"><h3>What peak flow number should send me to the emergency room?</h3><p>Any reading below 50% of your personal best is the red zone. Take your quick-relief medicine and get medical help fast if the number does not recover. As an absolute marker, NIH reference material states that a peak flow below 200 L/min indicates severe obstruction for most adults younger than 65.</p></div><div class="faq-item"><h3>Do children use different peak flow zones?</h3><p>The zone percentages are the same: 80% to 100% of personal best is green, 50% to 80% is yellow, and below 50% is red. The raw numbers differ because normal peak flow depends on height and age. The American Lung Association notes that children as young as 5 can usually use a peak flow meter.</p></div></div>
+
+            <div class="share-bar">
+                <span>Share:</span>
+                <a class="share-btn" href="https://twitter.com/intent/tweet?text=What%20Does%20a%20Peak%20Flow%20Meter%20Reading%20Actually%20Tell%20You%3F&url=https://asthma.md/blog/what-does-a-peak-flow-meter-reading-tell-you/" target="_blank" rel="noopener">&#120143; Twitter</a>
+                <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://asthma.md/blog/what-does-a-peak-flow-meter-reading-tell-you/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+
+            <div class="cross-links">
+                <h3>Explore Related Health Topics</h3>
+                <div class="cross-links-list">
+                    <a href="https://symptom.md/">symptom.md</a><a href="https://anxiety.md/">anxiety.md</a><a href="https://insomnia.md/">insomnia.md</a><a href="https://supplements.md/">supplements.md</a><a href="https://thrive.md/">thrive.md</a>
+                </div>
+            </div>
+
+            <div class="disclaimer">
+                <strong>Medical Disclaimer:</strong> This content is for informational purposes only and does not constitute medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider with questions about a medical condition. Never disregard professional medical advice or delay seeking it because of something you read on this site. If you are in crisis, call 988 (Suicide &amp; Crisis Lifeline) or go to your nearest emergency room.
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container-wide">
+            <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
+                <a href="https://thrive.md">thrive.md</a>
+                <a href="https://anxiety.md">anxiety.md</a>
+                <a href="https://depression.md">depression.md</a>
+                <a href="https://ptsd.md">ptsd.md</a>
+                <a href="https://bipolar.md">bipolar.md</a>
+                <a href="https://ocd.md">ocd.md</a>
+                <a href="https://insomnia.md">insomnia.md</a>
+                <a href="https://ozempic.md">ozempic.md</a>
+                <a href="https://hypertension.md">hypertension.md</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 asthma.md — Part of the <a href="https://thrive.md">thrive.md</a> health network</p>
+        </div>
+    </footer>
+
+    <script>
+    // GA4 engagement tracking
+    let scrollMax = 0;
+    window.addEventListener('scroll', function() {
+        const pct = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+        if (pct > scrollMax) {
+            scrollMax = pct;
+            if ([25, 50, 75, 100].includes(pct)) {
+                gtag('event', 'scroll_depth', { percent: pct, page: location.pathname });
+            }
+        }
+    });
+    // Time on page
+    const startTime = Date.now();
+    window.addEventListener('beforeunload', function() {
+        const seconds = Math.round((Date.now() - startTime) / 1000);
+        gtag('event', 'time_on_page', { seconds: seconds, page: location.pathname });
+    });
+    </script>
+</body>
+</html>
