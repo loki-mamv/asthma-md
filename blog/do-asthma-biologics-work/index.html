@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6H85DH0R8S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6H85DH0R8S');
+</script>
+<script>
+  // AI answer-engine attribution: capture utm/app/referrer signals on landing
+  (function(){
+    try {
+      var q = new URLSearchParams(location.search);
+      var ref = document.referrer || '';
+      var refHost = '';
+      if (ref) { try { refHost = new URL(ref).hostname; } catch(e) {} }
+      var ua = navigator.userAgent || '';
+      var hint = /ChatGPT|OAI-/i.test(ua) ? 'chatgpt-app' : /Perplexity/i.test(ua) ? 'perplexity-app' : /Claude/i.test(ua) ? 'claude-app' : '';
+      gtag('event', 'ai_attribution', {
+        ai_utm: q.get('utm_source') || '(none)',
+        ai_ref: refHost || '(direct)',
+        ai_ua_hint: hint || '(none)'
+      });
+    } catch(e) {}
+  })();
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do Asthma Biologics Work, And Who Qualifies For Them? &mdash; asthma.md</title>
+    <meta name="description" content="In FDA-label trials, asthma biologics cut exacerbations by roughly 28% to 71%. Most need severe asthma plus high eosinophils, IgE, or FeNO to qualify.">
+    <meta name="author" content="thrive.md Editorial Team">
+    <link rel="canonical" href="https://asthma.md/blog/do-asthma-biologics-work/">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://asthma.md/blog/do-asthma-biologics-work/">
+    <meta property="og:title" content="Do Asthma Biologics Work, And Who Qualifies For Them? &mdash; asthma.md">
+    <meta property="og:description" content="In FDA-label trials, asthma biologics cut exacerbations by roughly 28% to 71%. Most need severe asthma plus high eosinophils, IgE, or FeNO to qualify.">
+    <meta property="og:site_name" content="asthma.md">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Do Asthma Biologics Work, And Who Qualifies For Them? &mdash; asthma.md">
+    <meta name="twitter:description" content="In FDA-label trials, asthma biologics cut exacerbations by roughly 28% to 71%. Most need severe asthma plus high eosinophils, IgE, or FeNO to qualify.">
+    <meta name="ai-content" content="allowed">
+    <meta name="ai-topic" content="asthma biologics, severe asthma, omalizumab, mepolizumab, benralizumab, reslizumab, dupilumab, tezepelumab, depemokimab, blood eosinophils, FeNO, IgE, GINA severe asthma guide">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Article",
+        "MedicalWebPage"
+      ],
+      "@id": "https://asthma.md/blog/do-asthma-biologics-work/#article",
+      "headline": "Do Asthma Biologics Work, And Who Qualifies For Them?",
+      "description": "In FDA-label trials, asthma biologics cut exacerbations by roughly 28% to 71%. Most need severe asthma plus high eosinophils, IgE, or FeNO to qualify.",
+      "url": "https://asthma.md/blog/do-asthma-biologics-work/",
+      "datePublished": "2026-09-15",
+      "dateModified": "2026-09-15",
+      "author": {
+        "@type": "Organization",
+        "name": "thrive.md Editorial Team",
+        "url": "https://thrive.md"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "asthma.md",
+        "url": "https://asthma.md"
+      },
+      "isPartOf": {
+        "@id": "https://asthma.md/#website"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://asthma.md/blog/do-asthma-biologics-work/#article"
+      },
+      "wordCount": "1232",
+      "contributor": {
+        "@type": "Person",
+        "name": "Agustin Arrieta, MD",
+        "jobTitle": "Otolaryngologist",
+        "medicalSpecialty": "Otolaryngologic"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can a biologic replace my inhaler?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Every asthma biologic label describes the drug as add-on maintenance treatment, and none is for relief of an acute attack. GINA's 2025 severe asthma guide says patients should not completely stop inhaled corticosteroid therapy, even after a good response to a biologic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there an asthma biologic given only twice a year?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Depemokimab (Exdensur) received FDA approval in December 2025 for severe eosinophilic asthma in people 12 and older. Its label lists one injection every 6 months, compared with every 2 to 8 weeks for most older biologics."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if the first biologic does not help?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GINA suggests stopping a biologic that shows no response and considering a switch to a different Type 2-targeted biologic if you are eligible. If the response is unclear after the first 4 months, it suggests extending the trial to 6 to 12 months."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a single low eosinophil count rule me out?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not necessarily. GINA notes that eosinophil counts and FeNO vary with time of day and are suppressed by oral steroids. It suggests repeating these tests up to 3 times before deciding a patient is not eligible for Type 2-targeted therapy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there serious side effects to watch for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Xolair and Cinqair labels carry boxed warnings for anaphylaxis, and Cinqair reported it in 0.3% of patients in placebo-controlled studies. GINA describes injection site reactions as the most common problem across the class, with anaphylaxis rare for the others."
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent: #0d9488;
+            --accent-dark: #0f766e;
+            --border: #e2e8f0;
+            --font-display: 'Source Serif 4', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-body); background: #fafaf9; color: var(--text-primary); line-height: 1.7; font-size: 16px; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { color: var(--accent-dark); text-decoration: underline; }
+
+        /* Header */
+        .site-header { border-bottom: 1px solid var(--border); padding: 1rem 0; background: #fff; }
+        .site-header .container { display: flex; align-items: center; justify-content: space-between; }
+        .site-logo { font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; color: var(--accent); }
+        .site-nav a { margin-left: 1.5rem; color: var(--text-secondary); font-size: 0.9rem; }
+
+        .container { max-width: 720px; margin: 0 auto; padding: 0 1.5rem; }
+        .container-wide { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; }
+
+        /* Article */
+        .article-header { padding: 3rem 0 2rem; }
+        .article-header h1 { font-family: var(--font-display); font-size: 2.25rem; line-height: 1.25; font-weight: 700; margin-bottom: 1rem; }
+        .article-meta { color: var(--text-muted); font-size: 0.875rem; display: flex; gap: 1.5rem; flex-wrap: wrap; }
+        .article-meta time, .article-meta .reading-time { display: flex; align-items: center; gap: 0.35rem; }
+
+        /* TOC */
+        .toc { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem 1.5rem; margin-bottom: 2rem; }
+        .toc-title { font-weight: 600; font-size: 0.9rem; margin-bottom: 0.75rem; color: var(--text-primary); }
+        .toc ol { padding-left: 1.25rem; }
+        .toc li { margin-bottom: 0.35rem; font-size: 0.9rem; }
+        .toc a { color: var(--text-secondary); }
+
+        /* Content */
+        .article-body { padding-bottom: 2rem; }
+        .article-body h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+        .article-body h3 { font-size: 1.2rem; font-weight: 600; margin: 1.5rem 0 0.75rem; }
+        .article-body p { margin-bottom: 1.25rem; }
+        .article-body ul, .article-body ol { margin-bottom: 1.25rem; padding-left: 1.5rem; }
+        .article-body li { margin-bottom: 0.5rem; }
+        .article-body blockquote { border-left: 3px solid var(--accent); padding: 0.75rem 1rem; background: var(--bg-secondary); margin-bottom: 1.25rem; font-style: italic; color: var(--text-secondary); }
+        .article-body .source-cite { font-size: 0.8rem; color: var(--text-muted); }
+        .article-body .source-cite a { color: var(--accent); }
+
+        /* FAQ */
+        .faq-section { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; padding: 2rem; margin: 2rem 0; }
+        .faq-section h2 { border: none; margin-top: 0; padding-top: 0; }
+        .faq-item { margin-bottom: 1.5rem; }
+        .faq-item:last-child { margin-bottom: 0; }
+        .faq-item h3 { font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--accent-dark); }
+        .faq-item p { color: var(--text-secondary); font-size: 0.95rem; }
+
+        /* Share */
+        .share-bar { display: flex; gap: 0.75rem; margin: 2rem 0; padding: 1.5rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); align-items: center; }
+        .share-bar span { font-size: 0.875rem; color: var(--text-muted); }
+        .share-btn { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.85rem; font-weight: 500; border: 1px solid var(--border); color: var(--text-secondary); background: #fff; cursor: pointer; transition: all 0.2s; }
+        .share-btn:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+
+        /* Related */
+        .related-posts { margin: 2rem 0; }
+        .related-posts h2 { font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 1rem; border: none; padding: 0; }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+        .related-card { border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; background: #fff; transition: border-color 0.2s; }
+        .related-card:hover { border-color: var(--accent); }
+        .related-card h3 { font-size: 0.95rem; margin-bottom: 0.5rem; }
+        .related-card p { font-size: 0.8rem; color: var(--text-muted); }
+
+        /* Cross-links */
+        .cross-links { margin: 2rem 0; padding: 1.5rem; background: var(--bg-secondary); border-radius: 8px; }
+        .cross-links h3 { font-size: 0.95rem; margin-bottom: 0.75rem; color: var(--text-secondary); }
+        .cross-links-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .cross-links-list a { padding: 0.35rem 0.75rem; border: 1px solid var(--border); border-radius: 20px; font-size: 0.8rem; color: var(--text-secondary); background: #fff; }
+        .cross-links-list a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+
+        /* Disclaimer */
+        .disclaimer { margin: 2rem 0; padding: 1.25rem; background: #fefce8; border: 1px solid #fde68a; border-radius: 8px; font-size: 0.8rem; color: #92400e; line-height: 1.6; }
+
+        /* Footer */
+        .site-footer { border-top: 1px solid var(--border); padding: 2rem 0; margin-top: 2rem; text-align: center; }
+        .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-bottom: 1rem; }
+        .footer-links a { font-size: 0.8rem; color: var(--text-muted); }
+        .footer-copy { font-size: 0.75rem; color: var(--text-muted); }
+
+        @media (max-width: 640px) {
+            .article-header h1 { font-size: 1.75rem; }
+            .related-grid { grid-template-columns: 1fr; }
+        }
+
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container-wide">
+            <a href="https://asthma.md/" class="site-logo">asthma.md</a>
+            <nav class="site-nav">
+                <a href="https://asthma.md/">Home</a>
+                <a href="https://asthma.md/blog/">Blog</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="container">
+            <header class="article-header">
+                <h1>Do Asthma Biologics Work, And Who Qualifies For Them?</h1>
+                <div class="article-meta">
+                    <time datetime="2026-09-15">September 15, 2026</time>
+                    <span class="reading-time">6 min read</span>
+                    <span>By thrive.md Editorial Team</span>
+                </div>
+                    <div class="medical-reviewer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span>Medical advisor: Agustin Arrieta, MD &mdash; Otolaryngologist (ENT), South Florida</span></div>
+            </header>
+
+            <nav class="toc"><div class="toc-title">Table of Contents</div><ol><li><a href="#what-counts-as-severe-asthma">What counts as severe asthma?</a></li><li><a href="#which-biologics-are-approved">Which biologics are FDA-approved for asthma, and what do they target?</a></li><li><a href="#how-well-do-they-work">How much do biologics reduce asthma attacks?</a></li><li><a href="#which-tests-decide-eligibility">Which blood and breath tests decide eligibility?</a></li><li><a href="#when-gina-says-to-consider-one">When does GINA say to consider a biologic?</a></li><li><a href="#how-is-response-judged">How do doctors judge whether a biologic is working?</a></li><li><a href="#the-bottom-line">The bottom line</a></li></ol></nav>
+
+            <div class="article-body">
+<p><strong>The short answer:</strong> Yes, for the right patients. In the pivotal trials summarized on FDA labels, asthma biologics cut the yearly rate of asthma attacks by roughly 28% to 71% compared with placebo. They are meant for severe asthma that stays uncontrolled despite high-dose inhaled treatment. Most also require a matching biomarker, such as high blood eosinophils, allergic IgE, or high exhaled nitric oxide (FeNO).</p>
+
+<h2 id="what-counts-as-severe-asthma">What counts as severe asthma?</h2>
+
+<p>The Global Initiative for Asthma (GINA) sets the definitions most specialists use. Its <a href="https://ginasthma.org/wp-content/uploads/2025/11/GINA-Severe-Asthma-Guide-2025-WEB-FINAL-WMS.pdf">2025 guide to difficult-to-treat and severe asthma</a> starts with uncontrolled asthma. That means poor symptom control, 2 or more steroid-treated flares a year, or at least 1 flare needing a hospital stay.</p>
+
+<p>Difficult-to-treat asthma stays uncontrolled despite medium- or high-dose inhaled corticosteroids with a second controller. Often the cause is fixable: poor inhaler technique, missed doses, smoking, or another condition. Severe asthma is the smaller group that stays uncontrolled after those problems are fixed and high-dose inhaled treatment is taken correctly. It also includes asthma that worsens when high-dose treatment is reduced.</p>
+
+<p>The group is small. GINA cites a Dutch study estimating that about 3.7% of people with asthma have severe asthma. Checking technique first matters, and our guide to <a href="/blog/asthma-inhalers-compared/">how asthma inhalers compare</a> covers the devices involved.</p>
+
+<h2 id="which-biologics-are-approved">Which biologics are FDA-approved for asthma, and what do they target?</h2>
+
+<p>Biologics are lab-made antibodies that block one signal in the inflammation behind asthma. Each is labeled as add-on maintenance treatment, not as a rescue medicine. As of September 2026, the FDA labels list seven:</p>
+
+<ul>
+<li><strong>Omalizumab (Xolair), anti-IgE.</strong> Ages 6 and up with moderate to severe persistent asthma, a positive skin or blood test to a year-round airborne allergen, and symptoms not controlled by inhaled corticosteroids. Per the <a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f6a2191-adfb-48b9-9bfa-0d9920479f0d">Xolair label</a>, the dose depends on baseline total IgE and body weight.</li>
+<li><strong>Mepolizumab (Nucala), anti-IL-5.</strong> Ages 6 and up with severe asthma and an eosinophilic phenotype, per the <a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fefb887c-e4ac-431e-8893-e9d1a5a63fea">Nucala label</a>.</li>
+<li><strong>Reslizumab (Cinqair), anti-IL-5.</strong> Adults 18 and up with severe eosinophilic asthma. It is the only one given by intravenous infusion, per the <a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=053b9158-2a5b-48b9-bf47-5fa78a35ec33">Cinqair label</a>.</li>
+<li><strong>Benralizumab (Fasenra), anti-IL-5 receptor alpha.</strong> Ages 6 and up with severe eosinophilic asthma. It removes eosinophils rather than only blocking IL-5, per the <a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da6aca1a-19ed-44a4-abb7-696c7d58b784">Fasenra label</a>.</li>
+<li><strong>Dupilumab (Dupixent), anti-IL-4 receptor alpha.</strong> Blocks both IL-4 and IL-13. Ages 6 and up with moderate-to-severe eosinophilic asthma or asthma that depends on oral steroids, per the <a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=595f437d-2729-40bb-9c62-c8ece1f82780">Dupixent label</a>.</li>
+<li><strong>Tezepelumab (Tezspire), anti-TSLP.</strong> Ages 12 and up with severe asthma. It is the only one with no required phenotype or biomarker, per the <a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=60f0aa03-ad25-4d48-80ce-7fcfa76f325f">Tezspire label</a>.</li>
+<li><strong>Depemokimab (Exdensur), anti-IL-5.</strong> Approved in December 2025 for ages 12 and up with severe eosinophilic asthma. The <a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=30332b20-2ac0-42ad-a775-d3ca7f5fe29f">Exdensur label</a> lists one injection every 6 months.</li>
+</ul>
+
+<p>Omalizumab is the one built around allergy. If you are unsure whether allergens drive your symptoms, see our explainer on <a href="/blog/asthma-and-allergies-connection/">the link between asthma and allergies</a>.</p>
+
+<h2 id="how-well-do-they-work">How much do biologics reduce asthma attacks?</h2>
+
+<p>The main goal is fewer severe flares, usually defined as attacks needing oral steroids, an emergency visit, or a hospital stay. The labels report these reductions in annual exacerbation rate versus placebo:</p>
+
+<ul>
+<li><strong>Tezepelumab:</strong> 71% in PATHWAY and 56% in NAVIGATOR.</li>
+<li><strong>Reslizumab:</strong> 50% and 59% in its two trials.</li>
+<li><strong>Depemokimab:</strong> 58% in SWIFT-1 and 48% in SWIFT-2.</li>
+<li><strong>Mepolizumab:</strong> 48% in DREAM and 47% in MENSA.</li>
+<li><strong>Benralizumab:</strong> 51% in SIROCCO and 28% in CALIMA, in patients with eosinophils of at least 300 cells/mcL.</li>
+<li><strong>Dupilumab:</strong> a rate ratio of 0.52 to 0.54 in QUEST, about a 46% to 48% cut. In children 6 to 11 with eosinophils of at least 300, the rate ratio was 0.35.</li>
+<li><strong>Omalizumab:</strong> older trials reported rates per patient, 0.2 versus 0.3 and 0.1 versus 0.4. GINA cites a meta-analysis showing a 44% drop in severe exacerbations.</li>
+</ul>
+
+<p>Some biologics also let people cut daily steroid tablets. In ZONDA, the median oral steroid dose fell 75% with benralizumab versus 25% with placebo. In VENTURE, the median fall was 100% with dupilumab versus 50% with placebo. Tezepelumab did not significantly reduce oral steroid dose in its trial. These trials used different patients and cannot be compared head to head, and GINA calls for direct comparisons.</p>
+
+<h2 id="which-tests-decide-eligibility">Which blood and breath tests decide eligibility?</h2>
+
+<p>Most biologics work best when asthma is driven by Type 2 inflammation. GINA lists these markers as signs of it in a patient on high-dose inhaled steroids:</p>
+
+<ul>
+<li>Blood eosinophils of at least 150 cells/microliter</li>
+<li>FeNO (exhaled nitric oxide) of at least 20 parts per billion</li>
+<li>Sputum eosinophils of at least 2%</li>
+<li>Asthma clearly driven by allergens</li>
+</ul>
+
+<p>Each drug class uses its own cutoffs. Anti-IL-5 drugs usually need a local eosinophil threshold, such as 150 or 300. For dupilumab, GINA lists eosinophils from 150 to 1,500, or FeNO of at least 25 ppb, or a need for daily oral steroids. Omalizumab needs allergen sensitization and total IgE within the dosing range, though GINA notes baseline IgE does not predict response.</p>
+
+<p>These numbers move. Eosinophils run higher in the morning and FeNO higher in the afternoon, and oral steroids suppress both. GINA suggests repeating the tests up to 3 times before ruling someone out. It also advises checking for parasite infection when eosinophils are high, before starting a biologic. Unusual symptoms can point elsewhere, and <a href="https://symptom.md/">symptom.md</a> covers how symptoms are sorted out.</p>
+
+<h2 id="when-gina-says-to-consider-one">When does GINA say to consider a biologic?</h2>
+
+<p>GINA recommends biologics only for severe asthma, and only after treatment has been optimized. It suggests considering one for people who still have flares or poor control on at least high-dose ICS-LABA. They also need allergic or eosinophilic markers, or a need for daily oral steroids. Tezepelumab may also be considered when Type 2 markers are not raised.</p>
+
+<p>When more than one drug fits, GINA lists these factors to weigh:</p>
+
+<ol>
+<li>Payer eligibility rules, which vary widely</li>
+<li>Related conditions, such as nasal polyps or eczema</li>
+<li>Allergen-triggered symptoms and response predictors, such as higher eosinophils or adult-onset asthma</li>
+<li>Cost, dosing frequency, injection or infusion, and patient preference</li>
+</ol>
+
+<p>Before any of this, GINA expects a specialist workup that confirms the diagnosis and checks adherence and inhaler technique. A written <a href="/blog/asthma-attack-action-plan/">asthma attack action plan</a> stays in place alongside a biologic.</p>
+
+<h2 id="how-is-response-judged">How do doctors judge whether a biologic is working?</h2>
+
+<p>GINA suggests an initial trial of at least 4 months for every class. There are no fixed criteria for a good response. Doctors look at flares, symptom control, lung function, oral steroid use, and patient satisfaction.</p>
+
+<p>If the response is unclear, GINA suggests extending the trial to 6 to 12 months. If there is no response, it suggests stopping and trying a different Type 2-targeted biologic if eligible. With a good response, oral steroids are reduced first, with monitoring for adrenal insufficiency. Inhaled corticosteroid treatment should not be stopped completely.</p>
+
+<h2 id="the-bottom-line">The bottom line</h2>
+
+<p>Asthma biologics work well for a defined group: people with confirmed severe asthma, frequent flares, and a matching biomarker. FDA-label trials show exacerbation cuts of roughly a quarter to more than two thirds, and some drugs reduce daily steroid tablets. Seven are approved, including twice-yearly depemokimab since December 2025. Ask a specialist about eosinophils, FeNO, and IgE testing if your asthma stays uncontrolled on high-dose inhalers.</p>
+
+<p><em>Last updated: September 2026. This article is for informational purposes only and does not constitute medical advice. Eligibility and choice of a biologic depend on your full history: talk with a pulmonologist or allergist before starting, stopping, or changing any asthma treatment.</em></p>
+            </div>
+
+            <div class="faq-section"><h2>Frequently Asked Questions</h2><div class="faq-item"><h3>Can a biologic replace my inhaler?</h3><p>No. Every asthma biologic label describes the drug as add-on maintenance treatment, and none is for relief of an acute attack. GINA&#x27;s 2025 severe asthma guide says patients should not completely stop inhaled corticosteroid therapy, even after a good response to a biologic.</p></div><div class="faq-item"><h3>Is there an asthma biologic given only twice a year?</h3><p>Yes. Depemokimab (Exdensur) received FDA approval in December 2025 for severe eosinophilic asthma in people 12 and older. Its label lists one injection every 6 months, compared with every 2 to 8 weeks for most older biologics.</p></div><div class="faq-item"><h3>What happens if the first biologic does not help?</h3><p>GINA suggests stopping a biologic that shows no response and considering a switch to a different Type 2-targeted biologic if you are eligible. If the response is unclear after the first 4 months, it suggests extending the trial to 6 to 12 months.</p></div><div class="faq-item"><h3>Does a single low eosinophil count rule me out?</h3><p>Not necessarily. GINA notes that eosinophil counts and FeNO vary with time of day and are suppressed by oral steroids. It suggests repeating these tests up to 3 times before deciding a patient is not eligible for Type 2-targeted therapy.</p></div><div class="faq-item"><h3>Are there serious side effects to watch for?</h3><p>The Xolair and Cinqair labels carry boxed warnings for anaphylaxis, and Cinqair reported it in 0.3% of patients in placebo-controlled studies. GINA describes injection site reactions as the most common problem across the class, with anaphylaxis rare for the others.</p></div></div>
+
+            <div class="share-bar">
+                <span>Share:</span>
+                <a class="share-btn" href="https://twitter.com/intent/tweet?text=Do%20Asthma%20Biologics%20Work%2C%20And%20Who%20Qualifies%20For%20Them%3F&url=https://asthma.md/blog/do-asthma-biologics-work/" target="_blank" rel="noopener">&#120143; Twitter</a>
+                <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://asthma.md/blog/do-asthma-biologics-work/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+
+            <div class="cross-links">
+                <h3>Explore Related Health Topics</h3>
+                <div class="cross-links-list">
+                    <a href="https://symptom.md/">symptom.md</a><a href="https://thrive.md/">thrive.md</a><a href="https://supplements.md/">supplements.md</a><a href="https://hypertension.md/">hypertension.md</a>
+                </div>
+            </div>
+
+            <div class="disclaimer">
+                <strong>Medical Disclaimer:</strong> This content is for informational purposes only and does not constitute medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider with questions about a medical condition. Never disregard professional medical advice or delay seeking it because of something you read on this site. If you are in crisis, call 988 (Suicide &amp; Crisis Lifeline) or go to your nearest emergency room.
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container-wide">
+            <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
+                <a href="https://thrive.md">thrive.md</a>
+                <a href="https://anxiety.md">anxiety.md</a>
+                <a href="https://depression.md">depression.md</a>
+                <a href="https://ptsd.md">ptsd.md</a>
+                <a href="https://bipolar.md">bipolar.md</a>
+                <a href="https://ocd.md">ocd.md</a>
+                <a href="https://insomnia.md">insomnia.md</a>
+                <a href="https://ozempic.md">ozempic.md</a>
+                <a href="https://hypertension.md">hypertension.md</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 asthma.md — Part of the <a href="https://thrive.md">thrive.md</a> health network</p>
+        </div>
+    </footer>
+
+    <script>
+    // GA4 engagement tracking
+    let scrollMax = 0;
+    window.addEventListener('scroll', function() {
+        const pct = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+        if (pct > scrollMax) {
+            scrollMax = pct;
+            if ([25, 50, 75, 100].includes(pct)) {
+                gtag('event', 'scroll_depth', { percent: pct, page: location.pathname });
+            }
+        }
+    });
+    // Time on page
+    const startTime = Date.now();
+    window.addEventListener('beforeunload', function() {
+        const seconds = Math.round((Date.now() - startTime) / 1000);
+        gtag('event', 'time_on_page', { seconds: seconds, page: location.pathname });
+    });
+    </script>
+</body>
+</html>
